@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmler</title>
+    <style>
+        body {
+            margin: 4px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            background-color: rgb(220, 228, 252);
+        }
+
+        .top {
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(28, 29, 33);
+        }
+
+        .top h1{
+            color: whitesmoke;
+            font-weight: 200;
+        }
+
+        header {
+            display: flex;
+        }
+        .mainicon{
+            margin: 12px;
+        }
+        img {
+            width: 64px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 200;
+        }
+
+        .container {
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .contain {
+            border-radius: 8px;
+            background-color: black;
+            color: azure;
+            transition: transform 0.2s ease;
+        }
+
+        .contain p {
+            margin: 4px;
+            font-weight: 100;
+        }
+
+        .contain a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .contain img {
+            border-radius: 8px;
+            width: 256px;
+        }
+
+        .contain:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+            filter: brightness(0.75);
+        }
+
+        .text {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="top">
+            <header>
+                <img src="img/film-slate.png" alt="" class="mainicon">
+                <h1><a href="">filmler.com</a></h1>
+            </header>
+            <h1>En yeni filmlerin adresi</h1>
+        </div>
+
+        <div class="container">
+            <div class="contain">
+                <a href="filmler/tasiyici.html" target="_blank">
+                    <img src="img/tasiyici.png" alt="">
+                    <p class="text">Taşıyıcı(2002)</p>
+                </a>
+            </div>
+            <div class="contain">
+                <a href="filmler/buzdevri.html" target="_blank">
+                    <img src="img/buzdevri.png" alt="">
+                    <p class="text">Buz Devri(2002)</p>
+                </a>
+            </div>
+            <div class="contain">
+                <a href="filmler/jurassic.html" target="_blank">
+                    <img src="img/jura.png" alt="">
+                    <p class="text">Jurassic Park(1993)</p>
+                </a>
+            </div>
+            <div class="contain">
+                <a href="#">
+                    <img src="img/pirates.png" alt="">
+                    <p class="text">Karayip Korsanları(2003)</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contain">
+                <a href="#">
+                    <img src="img/hulk.png" alt="">
+                    <p class="text">Hulk(2003)</p>
+                </a>
+            </div>
+            <div class="contain">
+                <a href="#">
+                    <img src="img/django.png" alt="">
+                    <p class="text">Zincirsiz(2012)</p>
+                </a>
+            </div>
+            <div class="contain">
+                <a href="#">
+                    <img src="img/vfor.png" alt="">
+                    <p class="text">V for Vendetta(2005)</p>
+                </a>
+            </div>
+            <div class="contain">
+                <a href="#">
+                    <img src="img/ted.png" alt="">
+                    <p class="text">Ted(2012)</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
